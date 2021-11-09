@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Django-tionary</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9cKb-8kDTP3C2ExbJ_L2OgGxBo4p-73iCw&usqp=CAU"
+      type="image/x-icon"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/beauty.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center; color: white">Dictionary</h1>
+    <div class="wrap">
+      <div class="dictPart">
+        <form action="word" class="form">
+          <input type="text" name="search" id="" placeholder="Search for..." />
+          <button id="searchBtn">
+            <i class="fa fa-search fa-spin"></i>
+          </button>
+        </form>
+      </div>
+      <h3>Meaning : {{meaning}}</h3>
+    </div>
+  </body>
+</html>
